@@ -32,8 +32,7 @@ class OTPWidget {
     final response = await ApiService.sendOTP(payload);
     return response;
   } catch (error) {
-    print('Error sending OTP: $error');
-    // throw Exception('Error exception OTP: $error');  // using throw to create a new stack trace
+    throw Exception('Error exception OTP: $error');  // using throw to create a new stack trace
   }
 }
 
@@ -48,7 +47,6 @@ class OTPWidget {
       final response = await ApiService.verifyOTP(payload);
       return response;
     } catch (error) {
-      print('Error verifying OTP: $error');
       rethrow;
     }
   }
@@ -63,7 +61,6 @@ class OTPWidget {
       final response = await ApiService.retryOTP(payload);
       return response;
     } catch (error) {
-      print('Error sending retry OTP: $error');
       rethrow;
     }
   }
@@ -75,7 +72,6 @@ class OTPWidget {
       final response = await ApiService.getWidgetProcess(_widgetId, _tokenAuth);
       return response;
     } catch (error) {
-      print('Error getting widget process: $error');
       rethrow;
     }
   }
