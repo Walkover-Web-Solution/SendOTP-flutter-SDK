@@ -118,7 +118,7 @@ You can call this method on a button press.
 <br>
 <br>
 
-*NOTE:* If you have enabled the invisible option in a widget configuration and you are trying to verify the mobile number with the mobile network then your number will be verified without OTP and if in any case the invisible verification gets fail in between the process then you will receive the normal OTP on your entered number.
+*NOTE:* This SDK does not support the Invisible OTP verification.
 
 ```dart
 Future<void> handleSendOtp() async {
@@ -175,7 +175,6 @@ Future<void> handleVerifyOtp() async {
 ```
 
 
-
 <br>
 <br>
 <br>
@@ -195,4 +194,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-```@
+```
