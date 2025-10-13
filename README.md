@@ -27,7 +27,7 @@ flutter pub add sendotp_flutter_sdk
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:otp_widget/otp_widget.dart';
+import 'package:sendotp_flutter_sdk/sendotp_flutter_sdk.dart';
 
 void main() {
   runApp(MyApp());

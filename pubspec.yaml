@@ -1,6 +1,6 @@
 name: sendotp_flutter_sdk
 description: "Send OTP SDK for Flutter application."
-version: 0.0.1
+version: 0.0.2
 homepage: https://msg91.com/in/otp
 repository: https://github.com/Walkover-Web-Solution/SendOTP-flutter-SDK?tab=License-1-ov-file#readme 
 
